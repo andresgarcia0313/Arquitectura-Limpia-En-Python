@@ -6,7 +6,7 @@ Clases:
     Cuenta: Entidad que representa una cuenta bancaria.
     CasoDeUsoCuenta: Caso de uso para la gestión de cuentas bancarias.
     RepositorioCuentaSQLite: Adaptador que implementa un repositorio usando
-    SQLite.
+        SQLite.
     AplicacionBanco: Aplicación de GUI para interactuar con el caso de uso de
     cuentas bancarias.
 
