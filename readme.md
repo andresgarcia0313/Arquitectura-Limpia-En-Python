@@ -1,0 +1,1 @@
+En linux instala python3-tk para la interfaz grafica
