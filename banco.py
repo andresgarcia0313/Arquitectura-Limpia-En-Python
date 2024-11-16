@@ -23,6 +23,7 @@ from tkinter import Tk, Label, Entry, Button, messagebox
 
 
 # Dominio (Entidades y puertos)
+# Plantilla puedo plantear n varias para realizarlas
 class Cuenta:
     """Entidad que representa una cuenta bancaria."""
 
@@ -35,6 +36,7 @@ class Cuenta:
         if monto <= 0:
             raise ValueError("El monto debe ser mayor a 0")
         self.saldo += monto
+        self.saldo = self.saldo + monto
 
     def retirar(self, monto: float):
         """Método para retirar dinero de la cuenta."""
@@ -43,7 +45,7 @@ class Cuenta:
         self.saldo -= monto
 
 
-# Caso de uso
+# Caso de uso o requemiento o deseo de funciona o historio de usuario
 class CasoDeUsoCuenta:
     """Caso de uso para la gestión de cuentas bancarias."""
 
@@ -63,7 +65,8 @@ class CasoDeUsoCuenta:
         self.repositorio_cuentas.guardar(cuenta)
 
 
-# Puertos y adaptadores (repositorio SQLite)
+# Puertos y adaptadores (repositorio SQLite) nos permite consultarla y guardar CRUD
+# Crear Leer Actualizar y Eliminar o en ingles Create Read Update Delete
 class RepositorioCuentaSQLite:
     """Adaptador que implementa un repositorio usando SQLite."""
 
